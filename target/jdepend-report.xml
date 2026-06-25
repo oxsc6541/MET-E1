@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="bar">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>2</Ce>
+                <A>0.5</A>
+                <I>1</I>
+                <D>0.5</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Getraenk.java">
+                    bar.Getraenk
+                </Class>
+                <Class sourceFile="RezeptFilter.java">
+                    bar.RezeptFilter
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Main.java">
+                    bar.Main
+                </Class>
+                <Class sourceFile="Zutat.java">
+                    bar.Zutat
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>
